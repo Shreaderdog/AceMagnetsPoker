@@ -20,7 +20,7 @@ def straight(chand):  # checks if player hand is a straight
 
     values.sort()
 
-    for i in range(len(values)):
+    for i in range(len(values)-1):
         if values[i] + 1 != values[i+1]:
             return False
     return True
@@ -199,8 +199,6 @@ except Exception:
 
 root = tk.Tk()  # main window
 root.title("Ace Magnets Video Poker")
-root.geometry("1200x750")
-root.resizable(0, 0)
 root.configure(background='green')
 
 # main menu
